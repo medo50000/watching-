@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 
 
-client.login("التوكن");
+client.login("NDY4NDc5Njk5NTQzMTMwMTMy.XW_v2g.-JOWbJ6C6iME7AocM0n53YJnTJs");
 
 
 
@@ -24,13 +24,13 @@ client.user.setStatus("dnd");
 
 
 
-const devs = ["الادي حقك"];
-const adminprefix = ["البرفكس"];
+const devs = ["468479699543130132"];
+const adminprefix = ["-"];
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
       
-  if (message.content.startsWith('p!ply')) {
+  if (message.content.startsWith('play')) {
     client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
